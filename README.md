@@ -16,6 +16,18 @@ Google Cloud Platform
 -------------------------------------------------------------------------------------------
 # Cloud SDK challenge
 --------------------------------------------------------------------------------------------
+Display the data in JSON format
+
+# gcloud projects list --format json
+
+project ID, project name and the labels in CSV format 
+#gcloud projects list --format="csv(projectId, name, labels)"
+
+create compute resource via cloud SDK
+gcloud compute instances create example-instance --image-family=rhel-8 --image-project=rhel-cloud --zone=us-central1-a
+
+
+--------------------------------------------------------------------------------------------
 Git Command
 1) git branch -m main master
 2) git fetch origin
