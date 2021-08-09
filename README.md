@@ -1,12 +1,13 @@
 # CloudBootCamp
-This Repos is responsible for the Cloud Practice
+MultiCloud Practice notes
 
 Google Cloud Platform
 
 #My First GCP Bootcamp challenge AUTOMATION USING PYTHON ON GOOGLE CLOUDIAM SERVICE ACCOUNTS – PART 1
+
 1) Install Python on local machine
 2) Install Google SDK on local machine
-3) Create new project using GCloud on google shell
+3) Create new project using cloud console
 4) Create new service account using GCloud on google shell
 5) Update Serivce account name and description using GCloud on google shell
 6) Bind role to the service account using GCloud
