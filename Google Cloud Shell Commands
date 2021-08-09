@@ -1,0 +1,42 @@
+#GCP: Using gcloud to create and configure a service account
+
+# To show configuration
+
+1) gcloud config configurations list 
+
+#To list out components installed with the CLI, 
+
+2) gcloud components list 
+
+# To install or remove components at your current SDK version 
+
+3) gcloud components install COMPONENT_ID
+ex: gcloud components install alpha
+4) gcloud components remove COMPONENT_ID
+
+#To update your SDK installation 
+5) gcloud components update
+
+# get list of project ids
+6) gcloud projects list
+
+#Set project id
+
+7) gcloud config set project <PROJECTID>
+-- gcloud config set project amit-project-01-322409  
+
+#To create a service account for your project, run: with no key  
+
+8) gcloud iam service-accounts create amit-account-01 --display-name="GCP Service Account" --project=amit-project-01-322409
+
+#Update Service account with roles
+
+9) gcloud iam service-accounts update \ amit-account-01@amit-project-01-322409.iam.gserviceaccount.com \ 
+--description="Storage Admin"--display-name="Storage Admin Role"
+
+#Bind role
+10) gcloud projects add-iam-policy-binding amit-project-01-322409  --member="serviceAccount:amit-account-01@amit-project-01-322409.iam.gserviceaccount.com" --role="roles/storage.admin"
+
+#create keys for the service account
+11) gcloud iam service-accounts keys create amit-profile.json --iam-account=gcpaccount@gcpbootcamp-322406.iam.gserviceaccount.com --key-file-type="json"
+
