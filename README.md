@@ -13,7 +13,8 @@ Google Cloud Platform
 6) Bind role to the service account using GCloud
 7) Add key to the service account
 8) Access the Google cloud project using the API key and get list of buckets on the account from local machine
-
+-------------------------------------------------------------------------------------------
+# Cloud SDK challenge
 --------------------------------------------------------------------------------------------
 Git Command
 1) git branch -m main master
