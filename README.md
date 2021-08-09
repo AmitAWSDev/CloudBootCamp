@@ -1,5 +1,5 @@
 # CloudBootCamp
-This Repos is responsible for Cloud Practice
+This Repos is responsible for the Cloud Practice
 
 Google Cloud Platform
 
