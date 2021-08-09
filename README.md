@@ -18,13 +18,36 @@ Google Cloud Platform
 --------------------------------------------------------------------------------------------
 Display the data in JSON format
 
-# gcloud projects list --format json
+1) gcloud projects list --format json
 
 project ID, project name and the labels in CSV format 
-#gcloud projects list --format="csv(projectId, name, labels)"
+1) gcloud projects list --format="csv(projectId, name, labels)"
 
 create compute resource via cloud SDK
-gcloud compute instances create example-instance --image-family=rhel-8 --image-project=rhel-cloud --zone=us-central1-a
+
+1) gcloud compute instances create vm1 --zone=us-west1-b
+
+if you want to see help please use below command
+
+2) gcloud compute instances create --help
+
+create farewall rule
+1) gcloud compute firewall-rules create allow-80 --allow tcp:80
+
+connect to ssh
+1) gcloud compute ssh vm1
+2) install nginx on ssh window
+   a) sudo su - 
+   b) apt-get update
+   c) apt-get install -y wget
+   d) apt-get install -y nginx
+   e) service nginx start
+   f) exit
+   g) wget -q -O - localhost:80 | grep nginx
+   
+   Verify via UI 
+   externalip:80
+
 
 
 --------------------------------------------------------------------------------------------
